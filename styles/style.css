@@ -2,15 +2,16 @@
 body {
   background-color: #000344;
   color: white;
+  transform: translate(-50%, -50%);
+  text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
 }
 
 p {
   font-family: "DM Sans";
+  font-size: 20px;
 }
 
 h1 {
@@ -27,4 +28,17 @@ a {
   cursor: pointer;
   color: gray;
   
+}
+
+.navbutton {
+  color: white;
+  background-color: #000344;
+  border: 3px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.gamelink:hover {
+  color: gray;
 }
