@@ -7,9 +7,12 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  border: 3px solid white;
+  border-radius: 7px;
+  padding: 50px;
 }
 
-p {
+p, a {
   font-family: "DM Sans";
   font-size: 20px;
 }
@@ -27,7 +30,6 @@ a {
 .pageLink:hover {
   cursor: pointer;
   color: gray;
-  
 }
 
 .navbutton {

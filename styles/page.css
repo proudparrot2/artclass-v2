@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Press+Start+2P&display=swap');
+
+body {
+  background-color: #000344
+}
+
+.navbutton {
+  color: white;
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+#navbuttons {
+  display: none;
+  margin: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.gamelink {
+  font-family: "DM Sans";
+  font-size: 20px;
+  padding: 10px;
+}
+
+.gamelink:hover {
+  color: gray;
+}
+
+a, p {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
