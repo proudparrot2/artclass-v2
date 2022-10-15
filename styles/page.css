@@ -22,13 +22,13 @@ body {
   left: 0;
 }
 
-.gamelink {
+.gamelink, .link {
   font-family: "DM Sans";
   font-size: 20px;
   padding: 10px;
 }
 
-.gamelink:hover {
+.gamelink:hover, .link:hover {
   color: gray;
 }
 
