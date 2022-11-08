@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Press+Start+2P&family=Source+Code+Pro&display=swap');
 body {
   background-color: #000344;
   color: white;
@@ -7,9 +7,9 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  border: 3px solid white;
+  border: 5px solid white;
   border-radius: 7px;
-  padding: 50px;
+  padding: 75px;
 }
 
 p, a {
@@ -27,10 +27,6 @@ a {
   color: white;
 }
 
-.pageLink:hover, .link:hover {
-  cursor: pointer;
-  color: gray;
-}
 
 .navbutton {
   color: white;
@@ -41,8 +37,13 @@ a {
   margin: 5px;
 }
 
-.gamelink:hover, .link:hover {
+.gamelink:hover, .pageLink:hover, .link:hover {
   color: gray;
+  cursor: pointer;
+}
+
+.bmDescrip {
+  color: #979797;
 }
 
 table, th, td {
@@ -56,4 +57,37 @@ table, th, td {
 
 th {
 	font-weight: bold;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  font-family: "DM Sans";
+  color: inherit;
+  font-size: inherit;
+  padding-left: 25px;
+  padding-right: 25px;
+  cursor: pointer;
+
+}
+
+.code {
+  font-family: "Source Code Pro";
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 10px;
+}
+
+#homeNav {
+  padding-left: 5px;
+  padding-right: 5px;
+
+}
+
+#usercounter {
+  margin: auto;
+  width: 50%
 }

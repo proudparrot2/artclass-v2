@@ -25,7 +25,6 @@ body {
 .gamelink, .link {
   font-family: "DM Sans";
   font-size: 20px;
-  padding: 10px;
 }
 
 .gamelink:hover, .link:hover {
@@ -36,4 +35,9 @@ a, p {
   text-decoration: none;
   color: white;
   text-align: center;
+}
+
+#usercounter {
+  margin: auto;
+  width: 50%
 }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+  <title>Art Class v2</title>
+  <link rel="icon" href="/assets/artclass-circle.png">
+  <link rel="stylesheet" href="/styles/style.css">
+  <script src="https://kit.fontawesome.com/e897e5d5dc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <h1>Bookmarklets</h1>
+  <p>Bookmarklets are a string of JavaScript in the form of a bookmark that gets executed when you click on it. They can be used to modify webpages or unblock things.</p>
+  <hr width="200px;">
+  <p>
+    <a class="link" onclick="toggle('tunnel');">Tunnel</a>
+    <p style="display: none;" id="tunnel" class="bmDescrip">Tunnel is a bookmarklet that puts a link into an about:blank tab. This does not unblock it, only hide it from your search history. When you click it, it will send an alert asking for the URL. It MUST start with https:// or else it will fail :/<br> <button onclick="copyTunnel();">Copy code</button></p>
+    <a class="link" onclick="toggle('disguise');">Disguise</a>
+    <p style="display: none;" id="disguise" class="bmDescrip">Change your current tab to look like Google Classroom!<br> <button onclick="copyDisguise();">Copy code</button></p> <br>
+    <br> <p> <a class="gamelink" href="/utilities.html"><i class="fa-solid fa-arrow-left"></i> Back</a> | <a class="gamelink" href="/"><i class="fa-solid fa-house"></i> Home</a></p>
+  </p>
+
+  <script>
+    function toggle(element) {
+      var elem = document.getElementById(element);
+
+      if (elem.style.display === "none") return elem.style.display = "block";
+      if (elem.style.display === "block") return elem.style.display = "none";
+    }
+
+    function copyTunnel() {
+      navigator.clipboard.writeText(`javascript: const selection = prompt("Enter your URL - must start with https://"); const tab = window.open('about:blank', '_blank'); const iframe = tab.document.createElement('iframe'); const stl = iframe.style; stl.border = stl.outline = 'none'; stl.width = '100vw'; stl.height = '100vh'; stl.position = 'fixed'; stl.left = stl.right = stl.top = stl.bottom = '0'; iframe.src = selection; tab.document.body.appendChild(iframe); tab.document.body.appendChild("Tunnel"); launch.style.background = '#008b8b'; launch.innerHTML = "launched";`);
+      alert("Copied!");
+    }
+
+    function copyDisguise() {
+      navigator.clipboard.writeText(`javascript:(function() { var link = document.querySelector("link[rel*='icon']") || document.createElement('link'); link.type = 'image/x-icon'; link.rel = 'shortcut icon'; link.href = 'https://ssl.gstatic.com/classroom/favicon.png'; document.title='Classroom'; console.log(document.title); document.getElementsByTagName('head')[0].appendChild(link);})();`);
+      alert("Copied!");
+    }
+  </script>
+</body>
